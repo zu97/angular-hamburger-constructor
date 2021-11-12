@@ -7,6 +7,8 @@ import {Ingredient} from "./shared/ingredient.model";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  basePrice = 20;
+
   ingredients = [
     new Ingredient('https://clck.ru/Ymakw', 'Meat', 50),
     new Ingredient('https://clck.ru/Ymakq', 'Cheese', 20),
