@@ -6,3 +6,9 @@ main {
 main > fieldset {
   width: 50%;
 }
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

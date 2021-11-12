@@ -7,5 +7,7 @@
   </fieldset>
   <fieldset class="burger">
     <legend>Burger</legend>
+    <app-burger [ingredients]="ingredients"></app-burger>
+    <app-total-price [base]="basePrice" [ingredients]="ingredients"></app-total-price>
   </fieldset>
 </main>
