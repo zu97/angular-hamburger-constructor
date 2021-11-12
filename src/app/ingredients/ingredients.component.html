@@ -1,1 +1,24 @@
-<p>ingredients works!</p>
+<div class="ingredient" *ngFor="let ingredient of ingredients">
+  <img [src]="ingredient.img"
+       [alt]="ingredient.name"
+       title="Добавить"
+       class="ingredient--img"
+       (click)="ingredient.increaseCount()"
+  >
+  <span class="ingredient--name">{{ ingredient.name }}</span>
+  <span class="ingredient--count">{{ ingredient.count }}</span>
+  <button
+    type="button"
+    class="ingredient--btn"
+    (click)="ingredient.reduceCount()"
+    [disabled]="!ingredient.isCanReduce()"
+    [ngClass]="[ingredient.isCanReduce() ? '' : 'ingredient--btn-invisible']"
+  >-1</button>
+  <button
+    type="button"
+    class="ingredient--btn"
+    (click)="ingredient.refreshCount()"
+    [disabled]="!ingredient.isCanReduce()"
+    [ngClass]="[ingredient.isCanReduce() ? '' : 'ingredient--btn-invisible']"
+  >Delete</button>
+</div>

@@ -1,0 +1,38 @@
+.ingredient {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.ingredient--img {
+  width: 50px;
+  height: 50px;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.ingredient--img:hover {
+  opacity: 0.8;
+}
+
+.ingredient--name {
+  padding: 0 10px;
+  flex-grow: 1;
+}
+
+.ingredient--count {
+  padding: 0 20px;
+}
+
+.ingredient--btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.ingredient--btn-invisible {
+  opacity: 0;
+  cursor: default;
+}

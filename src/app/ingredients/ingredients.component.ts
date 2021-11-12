@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Ingredient} from "../shared/ingredient.model";
 
 @Component({
   selector: 'app-ingredients',
@@ -6,5 +7,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./ingredients.component.css']
 })
 export class IngredientsComponent {
-
+  @Input() ingredients!: Ingredient[];
 }
